@@ -33,7 +33,7 @@ int main() {
 	Staff1.print();
 	Staff2.print();
 	Staff3.print();
-	cout << "Staff: " << Staff3.getCount();
+	Staff3.getCount();
 
 	return 0;
 }
