@@ -23,6 +23,5 @@ public:
 	Salary getSa() const;
 	int getTime() const;
 	void print();
-	void getCount() const;
 };
 #endif // !Staff_h
