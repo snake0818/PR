@@ -34,6 +34,3 @@ void Staff::print() {
 	salary.print();
 	cout << endl;
 }
-void Staff::getCount() const {
-	cout << "Staff: " << time << endl;
-}
