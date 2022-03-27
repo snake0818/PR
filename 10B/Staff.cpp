@@ -1,12 +1,11 @@
 #include "Staff.h"
 int Staff::time = 0;
-int Staff::count = 0;
 Staff::Staff() {}
 Staff::Staff(string NN, Birthday NB, Salary NS) {
 	setName(NN);
 	setBr(NB);
 	setSa(NS);
-	count++;
+	time++;
 }
 void Staff::setName(string NN) {
 	name = NN;
@@ -35,6 +34,6 @@ void Staff::print() {
 	salary.print();
 	cout << endl;
 }
-int Staff::getCount() {
-	return count;
+void Staff::getCount() const {
+	cout << "Staff: " << time << endl;
 }
