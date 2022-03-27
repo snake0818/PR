@@ -12,7 +12,6 @@ private:
 	Birthday birthday;
 	Salary salary;
 	static int time;
-	static int count;
 public:
 	Staff();
 	Staff(string, Birthday, Salary);
@@ -24,6 +23,6 @@ public:
 	Salary getSa() const;
 	int getTime() const;
 	void print();
-	int getCount();
+	void getCount() const;
 };
 #endif // !Staff_h
