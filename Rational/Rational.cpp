@@ -56,7 +56,7 @@ Rational Rational::subtract(const Rational& r2) const
 	return Rational(n1, n2);
 }
 
-Rational Rational::multply(const Rational& r2) const
+Rational Rational::multiply(const Rational& r2) const
 {
 	int n1 = numerator * r2.getNumerator();
 	int n2 = denominator * r2.getDenomintor();
@@ -119,7 +119,7 @@ Rational Rational::operator-(const Rational& r2)
 
 Rational Rational::operator*(const Rational& r2)
 {
-	return multply(r2);
+	return multiply(r2);
 }
 
 Rational Rational::operator/(const Rational& r2)
@@ -156,7 +156,7 @@ Rational& Rational::operator-=(const Rational& r2)
 
 Rational& Rational::operator*=(const Rational& r2)
 {
-	*this = multply(r2);
+	*this = multiply(r2);
 	return *this;
 }
 
@@ -232,7 +232,7 @@ Rational operator-(const Rational& r1, const Rational& r2)
 
 Rational operator*(const Rational& r1, const Rational& r2)
 {
-	return r1.multply(r2);
+	return r1.multiply(r2);
 }
 
 Rational operator/(const Rational& r1, const Rational& r2)
