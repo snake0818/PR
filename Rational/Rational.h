@@ -17,7 +17,7 @@ public:
 	bool equals(const Rational& r2) const;
 	Rational add(const Rational& r2) const;
 	Rational subtract(const Rational& r2) const;
-	Rational multply(const Rational& r2) const;
+	Rational multiply(const Rational& r2) const;
 	Rational divide(const Rational& r2) const;
 	Rational operator-();
 	int operator[](int index);
