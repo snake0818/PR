@@ -13,12 +13,14 @@ void display(Shape& s)
 	cout << fixed << setprecision(0);
 	if (p1 != NULL)
 	{
-		cout << p1->toString()<< ":(" << p1->getRadius() << "),"
+		cout << "Sphere:";
+		cout << "(" << p1->getRadius() << "),"
 			<< fixed << setprecision(1) << p1->getVolume() << ",";
 	}
 	if (p2 != NULL)
 	{
-		cout << p2->toString()<< ";("
+		cout << "Cuboid:";
+		cout << "("
 			<< p2->getLength() << "," << p2->getWidth() << "," << p2->getHeight() << "),"
 			<< fixed << setprecision(1) << p2->getVolume() << ",";
 	}
